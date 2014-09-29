@@ -1,0 +1,65 @@
+doctype html
+meta(charset="utf-8")
+head
+  style(type='text/css')
+    include report.css
+
+mixin background(s)
+  div.background(id=s.id)
+    pre.json-source=JSON.stringify(s,null,"  ")
+    h3 #{s.keyword}: #{s.name}
+    div.description!=  markdown(s.description)
+    ul.steps
+      each step in s.steps
+        +step(step)
+          
+mixin scenario(s)
+  div.scenario(id=s.id)
+    pre.json-source=JSON.stringify(s,null,"  ")
+    h3 #{s.keyword}: #{s.name}
+    div.description!=  markdown(s.description)
+    ul.steps
+      each step in s.steps.filter(function(s){return ['Before ','After '].indexOf(s.keyword) == -1;})
+        +step(step)
+
+mixin table(rows)
+  table
+    each row in rows
+      tr
+        each cell in row.cells
+          td= cell
+
+mixin step(s)
+  li.step(class=s.result? s.result.status:"unknown")
+    pre.json-source= JSON.stringify(s,null,"  ")
+    div.text
+      span.keyword= s.keyword
+      span.text= s.name
+    div.data
+      div
+        if s.doc_string
+          pre.doc-string= s.doc_string.value
+        if s.rows
+          +table(s.rows)
+
+mixin element(element)
+  case element.type
+    when "scenario"
+      +scenario(element)
+    when "background"
+      +background(element)
+    default
+      p keine ahnung
+
+
+mixin feature(feature)
+  div.feature(id=feature.id)
+    pre.json-source=JSON.stringify(element,null,"  ")
+    h2 #{feature.keyword}: #{feature.name}
+    div.description!=  markdown(feature.description)
+    div.elements
+      each element in feature.elements
+        +element(element)
+
+each feature in features
+  +feature(feature)

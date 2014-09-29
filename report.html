@@ -1,0 +1,3636 @@
+<!DOCTYPE html><meta charset="utf-8"><head><style type="text/css">div.feature{
+  margin: 50px;
+  width: 800px;
+  border-bottom:medium solid white;
+  padding: 10px;
+}
+body{
+  background:black;
+  color:white;
+}
+
+div.scenario, div.background{
+  margin-top: 10px;
+  margin-left: 10px;
+  background:#262626;
+  color:white;
+  padding: 5px;
+}
+pre.json-source{
+  display:none;
+}
+
+span.keyword{
+  font-weight:bold
+}
+
+li.step.passed{
+  border-left:thick solid green;
+  padding-left:15px;
+}
+li.step.skipped{
+  border-left:thick solid grey;
+  color: grey;
+  padding-left:15px;
+}
+li.step.pending{
+  border-left:thick solid yellow;
+  padding-left:15px;
+}
+li.step.undefined{
+  border-left:thick solid yellow;
+  padding-left:15px;
+}
+li.step.failed{
+  border-left:thick solid red;
+  padding-left:15px;
+}
+
+li.step div.text{
+}
+li.step div.data{
+  margin: 5px 15px 10px 15px;
+}
+li.step div.data pre.doc-string{
+  background-color: black;
+  color:white;
+  border:thin solid #DCDAD5;
+  padding: 0px 15px;
+}
+
+li.step div.data table{  
+  border-collapse: collapse;
+  background-color: black;
+}
+li.step div.data table td{  
+  border:thin solid grey;
+  padding: 2px 15px;
+}
+
+
+li.step > div.text span {
+}
+
+ul.steps{
+  list-style-type: none;
+}
+</style></head><div id="Code-Module-&quot;browserifizieren&quot;" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Code-Module &quot;browserifizieren&quot;</h2><div class="description"><p>Als Entwickler
+möchte ich, dass der Generator Common-js-Module &quot;browserifiziert&quot;,
+so dass ich für die Entwicklung meinen Code in Modulen kapseln kann.</p>
+<p>Als Endanwender
+möchte ich, dass der Generator den Javascript-Code in möglichst wenige Dateien zusammenfasst,
+so dass sich die Ladezeit der Seite verkürzt.</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 13,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 14,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 14,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="Code-Module-&quot;browserifizieren&quot;;generator-&quot;browserifiziert&quot;-client-code" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Generator \&quot;Browserifiziert\&quot; client-code&quot;,
+  &quot;id&quot;: &quot;Code-Module-\&quot;browserifizieren\&quot;;generator-\&quot;browserifiziert\&quot;-client-code&quot;,
+  &quot;line&quot;: 16,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 158078,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 14,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 265485,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;Client-Code im Verzeichnis \&quot;client/\&quot;&quot;,
+      &quot;line&quot;: 17,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 272168,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Startseite unter \&quot;site/index.html\&quot;, die Client-Code aus \&quot;client.js\&quot; lädt&quot;,
+      &quot;line&quot;: 18,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 2322087,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 19,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 557513893,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;landet der Client-Code in \&quot;site/client.js\&quot;&quot;,
+      &quot;line&quot;: 20,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 280299,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich kann die Startseite inklusive Client-Code in einem Browser laden&quot;,
+      &quot;line&quot;: 21,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 47716772,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1732235,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Generator &quot;Browserifiziert&quot; client-code</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 14,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 265485,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;Client-Code im Verzeichnis \&quot;client/\&quot;&quot;,
+  &quot;line&quot;: 17,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 272168,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">Client-Code im Verzeichnis &quot;client/&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Startseite unter \&quot;site/index.html\&quot;, die Client-Code aus \&quot;client.js\&quot; lädt&quot;,
+  &quot;line&quot;: 18,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 2322087,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Startseite unter &quot;site/index.html&quot;, die Client-Code aus &quot;client.js&quot; lädt</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 19,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 557513893,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;landet der Client-Code in \&quot;site/client.js\&quot;&quot;,
+  &quot;line&quot;: 20,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 280299,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">landet der Client-Code in &quot;site/client.js&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich kann die Startseite inklusive Client-Code in einem Browser laden&quot;,
+  &quot;line&quot;: 21,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 47716772,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ich kann die Startseite inklusive Client-Code in einem Browser laden</span></div><div class="data"><div></div></div></li></ul></div></div></div><div id="Reflektion-über-vorhandene-Facetten" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Reflektion über vorhandene Facetten</h2><div class="description"><p>Als Client-Code-Entwickler
+möchte ich zur Laufzeit feststellen können,</p>
+<ul>
+<li>welche Facetten mit welchen Foci in den Daten existieren</li>
+<li>wieviele Datensätze auf die einzelnen Foci entfallen</li>
+</ul>
+<p>damit ich z.B. den Foci entsprechende CSS-Klassen mit der Visualisierung
+eines Datensatzes assoziieren kann.</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 14,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 15,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 15,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="Reflektion-über-vorhandene-Facetten;n-zu-1-verknüpfung-induziert-facette" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;N-zu-1 Verknüpfung induziert Facette&quot;,
+  &quot;id&quot;: &quot;Reflektion-über-vorhandene-Facetten;n-zu-1-verknüpfung-induziert-facette&quot;,
+  &quot;line&quot;: 17,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 23893,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 15,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 73361,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+      &quot;line&quot;: 18,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;id&quot;,
+            &quot;name&quot;,
+            &quot;herkunftsland&quot;,
+            &quot;preiseinheit&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;1&quot;,
+            &quot;Banane&quot;,
+            &quot;ESP&quot;,
+            &quot;1KG&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;2&quot;,
+            &quot;Erdbeere&quot;,
+            &quot;ISR&quot;,
+            &quot;100G&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;3&quot;,
+            &quot;Melone&quot;,
+            &quot;HUN&quot;,
+            &quot;STK&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;4&quot;,
+            &quot;Spargel&quot;,
+            &quot;DEU&quot;,
+            &quot;1KG&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1988911,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/herkunftsland.csv\&quot;:&quot;,
+      &quot;line&quot;: 24,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;ISO 3166 Code&quot;,
+            &quot;name.de&quot;,
+            &quot;name.native&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;ESP&quot;,
+            &quot;Spanien&quot;,
+            &quot;España&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;ISR&quot;,
+            &quot;Israel&quot;,
+            &quot;מְדִינַת יִשְׂרָאֵל&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;HUN&quot;,
+            &quot;Ungarn&quot;,
+            &quot;Magyarország&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;DEU&quot;,
+            &quot;Deutschland&quot;,
+            &quot;Deutschland&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 577529,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/preiseinheit.csv\&quot;:&quot;,
+      &quot;line&quot;: 30,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;key&quot;,
+            &quot;Name&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;1KG&quot;,
+            &quot;pro Kilogramm&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;100G&quot;,
+            &quot;pro 100g&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;STK&quot;,
+            &quot;pro Stück&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 333771,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 36,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 11486459,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;site/facettes.json\&quot;:&quot;,
+      &quot;line&quot;: 37,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;count\&quot;:4,\n  \&quot;facettes\&quot;: {\n    \&quot;herkunftsland\&quot;:{\n      \&quot;key\&quot;:\&quot;ISO 3166 Code\&quot;,\n      \&quot;foci\&quot;:{\n        \&quot;ESP\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;ESP\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Spanien\&quot;,\n              \&quot;native\&quot;: \&quot;España\&quot;\n            }\n          },\n          \&quot;count\&quot;: 1\n        },\n        \&quot;ISR\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;ISR\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Israel\&quot;,\n              \&quot;native\&quot;: \&quot;מְדִינַת יִשְׂרָאֵל\&quot;\n            }\n          },\n          \&quot;count\&quot;: 1\n        },\n        \&quot;HUN\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;HUN\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Ungarn\&quot;,\n              \&quot;native\&quot;: \&quot;Magyarország\&quot;\n            }\n          },\n          \&quot;count\&quot;:1\n        },\n        \&quot;DEU\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;DEU\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Deutschland\&quot;,\n              \&quot;native\&quot;: \&quot;Deutschland\&quot;\n            }\n          },\n          \&quot;count\&quot;: 1\n        }\n      }\n    },\n    \&quot;preiseinheit\&quot;:{\n      \&quot;key\&quot;: \&quot;key\&quot;,\n      \&quot;foci\&quot;: {\n        \&quot;1KG\&quot;: {\n          \&quot;data\&quot;: {\n            \&quot;key\&quot;:\&quot;1KG\&quot;,\n            \&quot;Name\&quot;:\&quot;pro Kilogramm\&quot;\n          },\n          \&quot;count\&quot;: 2\n        },\n        \&quot;100G\&quot;: {\n          \&quot;data\&quot;: {\n            \&quot;key\&quot;:\&quot;100G\&quot;,\n            \&quot;Name\&quot;: \&quot;pro 100g\&quot;\n          },\n          \&quot;count\&quot;: 1\n        },\n        \&quot;STK\&quot;: {\n          \&quot;data\&quot;: {\n            \&quot;key\&quot;: \&quot;STK\&quot;,\n            \&quot;Name\&quot;: \&quot;pro Stück\&quot;\n          },\n          \&quot;count\&quot;: 1\n        }\n      }\n    }\n  }\n}&quot;,
+        &quot;line&quot;: 38,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1163203,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1040696,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: N-zu-1 Verknüpfung induziert Facette</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 15,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 73361,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+  &quot;line&quot;: 18,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;id&quot;,
+        &quot;name&quot;,
+        &quot;herkunftsland&quot;,
+        &quot;preiseinheit&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;1&quot;,
+        &quot;Banane&quot;,
+        &quot;ESP&quot;,
+        &quot;1KG&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;2&quot;,
+        &quot;Erdbeere&quot;,
+        &quot;ISR&quot;,
+        &quot;100G&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;3&quot;,
+        &quot;Melone&quot;,
+        &quot;HUN&quot;,
+        &quot;STK&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;4&quot;,
+        &quot;Spargel&quot;,
+        &quot;DEU&quot;,
+        &quot;1KG&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 1988911,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;data/index.csv&quot;:</span></div><div class="data"><div><table><tr><td>id</td><td>name</td><td>herkunftsland</td><td>preiseinheit</td></tr><tr><td>1</td><td>Banane</td><td>ESP</td><td>1KG</td></tr><tr><td>2</td><td>Erdbeere</td><td>ISR</td><td>100G</td></tr><tr><td>3</td><td>Melone</td><td>HUN</td><td>STK</td></tr><tr><td>4</td><td>Spargel</td><td>DEU</td><td>1KG</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/herkunftsland.csv\&quot;:&quot;,
+  &quot;line&quot;: 24,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;ISO 3166 Code&quot;,
+        &quot;name.de&quot;,
+        &quot;name.native&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;ESP&quot;,
+        &quot;Spanien&quot;,
+        &quot;España&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;ISR&quot;,
+        &quot;Israel&quot;,
+        &quot;מְדִינַת יִשְׂרָאֵל&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;HUN&quot;,
+        &quot;Ungarn&quot;,
+        &quot;Magyarország&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;DEU&quot;,
+        &quot;Deutschland&quot;,
+        &quot;Deutschland&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 577529,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;data/herkunftsland.csv&quot;:</span></div><div class="data"><div><table><tr><td>ISO 3166 Code</td><td>name.de</td><td>name.native</td></tr><tr><td>ESP</td><td>Spanien</td><td>España</td></tr><tr><td>ISR</td><td>Israel</td><td>מְדִינַת יִשְׂרָאֵל</td></tr><tr><td>HUN</td><td>Ungarn</td><td>Magyarország</td></tr><tr><td>DEU</td><td>Deutschland</td><td>Deutschland</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/preiseinheit.csv\&quot;:&quot;,
+  &quot;line&quot;: 30,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;key&quot;,
+        &quot;Name&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;1KG&quot;,
+        &quot;pro Kilogramm&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;100G&quot;,
+        &quot;pro 100g&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;STK&quot;,
+        &quot;pro Stück&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 333771,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;data/preiseinheit.csv&quot;:</span></div><div class="data"><div><table><tr><td>key</td><td>Name</td></tr><tr><td>1KG</td><td>pro Kilogramm</td></tr><tr><td>100G</td><td>pro 100g</td></tr><tr><td>STK</td><td>pro Stück</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 36,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 11486459,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;site/facettes.json\&quot;:&quot;,
+  &quot;line&quot;: 37,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;count\&quot;:4,\n  \&quot;facettes\&quot;: {\n    \&quot;herkunftsland\&quot;:{\n      \&quot;key\&quot;:\&quot;ISO 3166 Code\&quot;,\n      \&quot;foci\&quot;:{\n        \&quot;ESP\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;ESP\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Spanien\&quot;,\n              \&quot;native\&quot;: \&quot;España\&quot;\n            }\n          },\n          \&quot;count\&quot;: 1\n        },\n        \&quot;ISR\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;ISR\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Israel\&quot;,\n              \&quot;native\&quot;: \&quot;מְדִינַת יִשְׂרָאֵל\&quot;\n            }\n          },\n          \&quot;count\&quot;: 1\n        },\n        \&quot;HUN\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;HUN\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Ungarn\&quot;,\n              \&quot;native\&quot;: \&quot;Magyarország\&quot;\n            }\n          },\n          \&quot;count\&quot;:1\n        },\n        \&quot;DEU\&quot;: {\n          \&quot;data\&quot;:{\n            \&quot;ISO 3166 Code\&quot;: \&quot;DEU\&quot;,\n            \&quot;name\&quot;: {\n              \&quot;de\&quot;:\&quot;Deutschland\&quot;,\n              \&quot;native\&quot;: \&quot;Deutschland\&quot;\n            }\n          },\n          \&quot;count\&quot;: 1\n        }\n      }\n    },\n    \&quot;preiseinheit\&quot;:{\n      \&quot;key\&quot;: \&quot;key\&quot;,\n      \&quot;foci\&quot;: {\n        \&quot;1KG\&quot;: {\n          \&quot;data\&quot;: {\n            \&quot;key\&quot;:\&quot;1KG\&quot;,\n            \&quot;Name\&quot;:\&quot;pro Kilogramm\&quot;\n          },\n          \&quot;count\&quot;: 2\n        },\n        \&quot;100G\&quot;: {\n          \&quot;data\&quot;: {\n            \&quot;key\&quot;:\&quot;100G\&quot;,\n            \&quot;Name\&quot;: \&quot;pro 100g\&quot;\n          },\n          \&quot;count\&quot;: 1\n        },\n        \&quot;STK\&quot;: {\n          \&quot;data\&quot;: {\n            \&quot;key\&quot;: \&quot;STK\&quot;,\n            \&quot;Name\&quot;: \&quot;pro Stück\&quot;\n          },\n          \&quot;count\&quot;: 1\n        }\n      }\n    }\n  }\n}&quot;,
+    &quot;line&quot;: 38,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 1163203,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich folgende Daten in &quot;site/facettes.json&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;count&quot;:4,
+  &quot;facettes&quot;: {
+    &quot;herkunftsland&quot;:{
+      &quot;key&quot;:&quot;ISO 3166 Code&quot;,
+      &quot;foci&quot;:{
+        &quot;ESP&quot;: {
+          &quot;data&quot;:{
+            &quot;ISO 3166 Code&quot;: &quot;ESP&quot;,
+            &quot;name&quot;: {
+              &quot;de&quot;:&quot;Spanien&quot;,
+              &quot;native&quot;: &quot;España&quot;
+            }
+          },
+          &quot;count&quot;: 1
+        },
+        &quot;ISR&quot;: {
+          &quot;data&quot;:{
+            &quot;ISO 3166 Code&quot;: &quot;ISR&quot;,
+            &quot;name&quot;: {
+              &quot;de&quot;:&quot;Israel&quot;,
+              &quot;native&quot;: &quot;מְדִינַת יִשְׂרָאֵל&quot;
+            }
+          },
+          &quot;count&quot;: 1
+        },
+        &quot;HUN&quot;: {
+          &quot;data&quot;:{
+            &quot;ISO 3166 Code&quot;: &quot;HUN&quot;,
+            &quot;name&quot;: {
+              &quot;de&quot;:&quot;Ungarn&quot;,
+              &quot;native&quot;: &quot;Magyarország&quot;
+            }
+          },
+          &quot;count&quot;:1
+        },
+        &quot;DEU&quot;: {
+          &quot;data&quot;:{
+            &quot;ISO 3166 Code&quot;: &quot;DEU&quot;,
+            &quot;name&quot;: {
+              &quot;de&quot;:&quot;Deutschland&quot;,
+              &quot;native&quot;: &quot;Deutschland&quot;
+            }
+          },
+          &quot;count&quot;: 1
+        }
+      }
+    },
+    &quot;preiseinheit&quot;:{
+      &quot;key&quot;: &quot;key&quot;,
+      &quot;foci&quot;: {
+        &quot;1KG&quot;: {
+          &quot;data&quot;: {
+            &quot;key&quot;:&quot;1KG&quot;,
+            &quot;Name&quot;:&quot;pro Kilogramm&quot;
+          },
+          &quot;count&quot;: 2
+        },
+        &quot;100G&quot;: {
+          &quot;data&quot;: {
+            &quot;key&quot;:&quot;100G&quot;,
+            &quot;Name&quot;: &quot;pro 100g&quot;
+          },
+          &quot;count&quot;: 1
+        },
+        &quot;STK&quot;: {
+          &quot;data&quot;: {
+            &quot;key&quot;: &quot;STK&quot;,
+            &quot;Name&quot;: &quot;pro Stück&quot;
+          },
+          &quot;count&quot;: 1
+        }
+      }
+    }
+  }
+}</pre></div></div></li></ul></div></div></div><div id="Tabellarische-Daten-verknüpfen" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Tabellarische Daten verknüpfen</h2><div class="description"><p>Als Betreiber
+möchte ich die Metadaten zu den Featurepunkten in Tabellenform angeben können
+weil sich diese Art von Daten gut mit mir vertrauten Werkzeugen (SQL-Tools, Excel &amp; Co) verarbeiten lassen.</p>
+<p>Als Betreiber
+möchte ich Beziehungen zwischen einer Primär- und beliebig vielen Sekundärtabellen angeben können
+um Redundanzen in der Primärtabelle zu reduzieren. Ausserdem kenn ich das so aus meinen SQL-Datenbanken.</p>
+<p>Die Verknüpfung geschieht über die Spalten- bzw Dateinamen.</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 15,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 16,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 16,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="Tabellarische-Daten-verknüpfen;n-zu-1-verknüpfung" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;N-zu-1 Verknüpfung&quot;,
+  &quot;id&quot;: &quot;Tabellarische-Daten-verknüpfen;n-zu-1-verknüpfung&quot;,
+  &quot;line&quot;: 18,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 24371,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 16,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 187583,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+      &quot;line&quot;: 19,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;id&quot;,
+            &quot;name.de&quot;,
+            &quot;name.en&quot;,
+            &quot;art&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;1&quot;,
+            &quot;Apfel&quot;,
+            &quot;Apple&quot;,
+            &quot;FRT&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;2&quot;,
+            &quot;Tomate&quot;,
+            &quot;Tomato&quot;,
+            &quot;VEG&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 853461,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/art.csv\&quot;:&quot;,
+      &quot;line&quot;: 23,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;key&quot;,
+            &quot;name.de&quot;,
+            &quot;name.en&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;FRT&quot;,
+            &quot;Obst&quot;,
+            &quot;Fruit&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;VEG&quot;,
+            &quot;Gemüse&quot;,
+            &quot;Vegetable&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 464585,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 28,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 5770451,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;site/data.json\&quot;:&quot;,
+      &quot;line&quot;: 29,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;1\&quot;:{\n    \&quot;id\&quot;: \&quot;1\&quot;,\n    \&quot;name\&quot;: {\n      \&quot;de\&quot;: \&quot;Apfel\&quot;,\n      \&quot;en\&quot;: \&quot;Apple\&quot;\n    },\n    \&quot;art\&quot;: {\n      \&quot;key\&quot;:\&quot;FRT\&quot;,\n      \&quot;name\&quot;:{\n        \&quot;de\&quot;: \&quot;Obst\&quot;,\n        \&quot;en\&quot;: \&quot;Fruit\&quot;\n      }\n    }\n  },\n  \&quot;2\&quot;:{\n    \&quot;id\&quot;: \&quot;2\&quot;,\n    \&quot;name\&quot;: {\n      \&quot;de\&quot;: \&quot;Tomate\&quot;,\n      \&quot;en\&quot;: \&quot;Tomato\&quot;\n    },\n    \&quot;art\&quot;: {\n      \&quot;key\&quot;:\&quot;VEG\&quot;,\n      \&quot;name\&quot;:{\n        \&quot;de\&quot;: \&quot;Gemüse\&quot;,\n        \&quot;en\&quot;: \&quot;Vegetable\&quot;\n      }\n    }\n  }\n}&quot;,
+        &quot;line&quot;: 30,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 378922,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 778395,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: N-zu-1 Verknüpfung</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 16,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 187583,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+  &quot;line&quot;: 19,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;id&quot;,
+        &quot;name.de&quot;,
+        &quot;name.en&quot;,
+        &quot;art&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;1&quot;,
+        &quot;Apfel&quot;,
+        &quot;Apple&quot;,
+        &quot;FRT&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;2&quot;,
+        &quot;Tomate&quot;,
+        &quot;Tomato&quot;,
+        &quot;VEG&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 853461,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;data/index.csv&quot;:</span></div><div class="data"><div><table><tr><td>id</td><td>name.de</td><td>name.en</td><td>art</td></tr><tr><td>1</td><td>Apfel</td><td>Apple</td><td>FRT</td></tr><tr><td>2</td><td>Tomate</td><td>Tomato</td><td>VEG</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/art.csv\&quot;:&quot;,
+  &quot;line&quot;: 23,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;key&quot;,
+        &quot;name.de&quot;,
+        &quot;name.en&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;FRT&quot;,
+        &quot;Obst&quot;,
+        &quot;Fruit&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;VEG&quot;,
+        &quot;Gemüse&quot;,
+        &quot;Vegetable&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 464585,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Tabelle &quot;data/art.csv&quot;:</span></div><div class="data"><div><table><tr><td>key</td><td>name.de</td><td>name.en</td></tr><tr><td>FRT</td><td>Obst</td><td>Fruit</td></tr><tr><td>VEG</td><td>Gemüse</td><td>Vegetable</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 28,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 5770451,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;site/data.json\&quot;:&quot;,
+  &quot;line&quot;: 29,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;1\&quot;:{\n    \&quot;id\&quot;: \&quot;1\&quot;,\n    \&quot;name\&quot;: {\n      \&quot;de\&quot;: \&quot;Apfel\&quot;,\n      \&quot;en\&quot;: \&quot;Apple\&quot;\n    },\n    \&quot;art\&quot;: {\n      \&quot;key\&quot;:\&quot;FRT\&quot;,\n      \&quot;name\&quot;:{\n        \&quot;de\&quot;: \&quot;Obst\&quot;,\n        \&quot;en\&quot;: \&quot;Fruit\&quot;\n      }\n    }\n  },\n  \&quot;2\&quot;:{\n    \&quot;id\&quot;: \&quot;2\&quot;,\n    \&quot;name\&quot;: {\n      \&quot;de\&quot;: \&quot;Tomate\&quot;,\n      \&quot;en\&quot;: \&quot;Tomato\&quot;\n    },\n    \&quot;art\&quot;: {\n      \&quot;key\&quot;:\&quot;VEG\&quot;,\n      \&quot;name\&quot;:{\n        \&quot;de\&quot;: \&quot;Gemüse\&quot;,\n        \&quot;en\&quot;: \&quot;Vegetable\&quot;\n      }\n    }\n  }\n}&quot;,
+    &quot;line&quot;: 30,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 378922,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich folgende Daten in &quot;site/data.json&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;1&quot;:{
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: {
+      &quot;de&quot;: &quot;Apfel&quot;,
+      &quot;en&quot;: &quot;Apple&quot;
+    },
+    &quot;art&quot;: {
+      &quot;key&quot;:&quot;FRT&quot;,
+      &quot;name&quot;:{
+        &quot;de&quot;: &quot;Obst&quot;,
+        &quot;en&quot;: &quot;Fruit&quot;
+      }
+    }
+  },
+  &quot;2&quot;:{
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: {
+      &quot;de&quot;: &quot;Tomate&quot;,
+      &quot;en&quot;: &quot;Tomato&quot;
+    },
+    &quot;art&quot;: {
+      &quot;key&quot;:&quot;VEG&quot;,
+      &quot;name&quot;:{
+        &quot;de&quot;: &quot;Gemüse&quot;,
+        &quot;en&quot;: &quot;Vegetable&quot;
+      }
+    }
+  }
+}</pre></div></div></li></ul></div></div></div><div id="Tabellenspalten-transformieren" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Tabellenspalten transformieren</h2><div class="description"><p>Als Betreiber
+möchte ich die Eingabedaten in bestimmten Tabellenspalten transformieren
+um z.B. führende Nullen bei vierstelligen Postleitzahlen sicherzustellen.</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 10,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="Tabellenspalten-transformieren;zero-padding" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Zero-Padding&quot;,
+  &quot;id&quot;: &quot;Tabellenspalten-transformieren;zero-padding&quot;,
+  &quot;line&quot;: 13,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 9766,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 52719,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+      &quot;line&quot;: 14,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;id&quot;,
+            &quot;name&quot;,
+            &quot;plz.padded&quot;,
+            &quot;plz.raw&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;1&quot;,
+            &quot;Poppelsdorf&quot;,
+            &quot;53115&quot;,
+            &quot;53115&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;2&quot;,
+            &quot;Békásmegyer&quot;,
+            &quot;1039&quot;,
+            &quot;1039&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 492155,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;data/index.coffee\&quot;:&quot;,
+      &quot;line&quot;: 18,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;module.exports = \n  \&quot;plz.padded\&quot;: (d) -&gt;\n    if (d.length) &lt; 5 \n      (\&quot;0\&quot; for i in [1..(5-d.length)]).join(\&quot;\&quot;) + d\n    else d&quot;,
+        &quot;line&quot;: 19,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 221036,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 26,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 10296863,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;site/data.json\&quot;:&quot;,
+      &quot;line&quot;: 27,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;1\&quot;:{\n    \&quot;id\&quot;: \&quot;1\&quot;,\n    \&quot;name\&quot;:\&quot;Poppelsdorf\&quot;,\n    \&quot;plz\&quot;:{ \&quot;padded\&quot;: \&quot;53115\&quot;, \&quot;raw\&quot;: \&quot;53115\&quot;}\n  },\n  \&quot;2\&quot;:{\n    \&quot;id\&quot;: \&quot;2\&quot;,\n    \&quot;name\&quot;:\&quot;Békásmegyer\&quot;,\n    \&quot;plz\&quot;:{ \&quot;padded\&quot;: \&quot;01039\&quot;, \&quot;raw\&quot;: \&quot;1039\&quot;}\n  }\n}&quot;,
+        &quot;line&quot;: 28,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 513966,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1071850,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Zero-Padding</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 52719,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+  &quot;line&quot;: 14,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;id&quot;,
+        &quot;name&quot;,
+        &quot;plz.padded&quot;,
+        &quot;plz.raw&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;1&quot;,
+        &quot;Poppelsdorf&quot;,
+        &quot;53115&quot;,
+        &quot;53115&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;2&quot;,
+        &quot;Békásmegyer&quot;,
+        &quot;1039&quot;,
+        &quot;1039&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 492155,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;data/index.csv&quot;:</span></div><div class="data"><div><table><tr><td>id</td><td>name</td><td>plz.padded</td><td>plz.raw</td></tr><tr><td>1</td><td>Poppelsdorf</td><td>53115</td><td>53115</td></tr><tr><td>2</td><td>Békásmegyer</td><td>1039</td><td>1039</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;data/index.coffee\&quot;:&quot;,
+  &quot;line&quot;: 18,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;module.exports = \n  \&quot;plz.padded\&quot;: (d) -&gt;\n    if (d.length) &lt; 5 \n      (\&quot;0\&quot; for i in [1..(5-d.length)]).join(\&quot;\&quot;) + d\n    else d&quot;,
+    &quot;line&quot;: 19,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 221036,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;data/index.coffee&quot;:</span></div><div class="data"><div><pre class="doc-string">module.exports = 
+  &quot;plz.padded&quot;: (d) -&gt;
+    if (d.length) &lt; 5 
+      (&quot;0&quot; for i in [1..(5-d.length)]).join(&quot;&quot;) + d
+    else d</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 26,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 10296863,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;site/data.json\&quot;:&quot;,
+  &quot;line&quot;: 27,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;1\&quot;:{\n    \&quot;id\&quot;: \&quot;1\&quot;,\n    \&quot;name\&quot;:\&quot;Poppelsdorf\&quot;,\n    \&quot;plz\&quot;:{ \&quot;padded\&quot;: \&quot;53115\&quot;, \&quot;raw\&quot;: \&quot;53115\&quot;}\n  },\n  \&quot;2\&quot;:{\n    \&quot;id\&quot;: \&quot;2\&quot;,\n    \&quot;name\&quot;:\&quot;Békásmegyer\&quot;,\n    \&quot;plz\&quot;:{ \&quot;padded\&quot;: \&quot;01039\&quot;, \&quot;raw\&quot;: \&quot;1039\&quot;}\n  }\n}&quot;,
+    &quot;line&quot;: 28,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 513966,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich folgende Daten in &quot;site/data.json&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;1&quot;:{
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;:&quot;Poppelsdorf&quot;,
+    &quot;plz&quot;:{ &quot;padded&quot;: &quot;53115&quot;, &quot;raw&quot;: &quot;53115&quot;}
+  },
+  &quot;2&quot;:{
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;:&quot;Békásmegyer&quot;,
+    &quot;plz&quot;:{ &quot;padded&quot;: &quot;01039&quot;, &quot;raw&quot;: &quot;1039&quot;}
+  }
+}</pre></div></div></li></ul></div></div></div><div id="CSV-Dateien-überlagern" class="feature"><pre class="json-source"></pre><h2>Funktionalität: CSV-Dateien überlagern</h2><div class="description"><p>Als Betreiber
+möchte ich Konfigurationsdateien im CSV Format aus verschiedenen Konfigurationsverzeichnissen überlagern
+so dass ich z.B. gezielt einzelne Einträge der Übersetzungstabelle für eine konkrete Anwendung
+überschreiben kann.</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 10,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="CSV-Dateien-überlagern;zeilen-ergänzen" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Zeilen ergänzen&quot;,
+  &quot;id&quot;: &quot;CSV-Dateien-überlagern;zeilen-ergänzen&quot;,
+  &quot;line&quot;: 16,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 19578,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 71013,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 96740,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+      &quot;line&quot;: 13,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 49812,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;A\&quot;:&quot;,
+      &quot;line&quot;: 17,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;foo&quot;,
+            &quot;Der Foo&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;Der Bar&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 832206,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;B\&quot;:&quot;,
+      &quot;line&quot;: 21,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;baz&quot;,
+            &quot;Der Baz&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 373721,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+      &quot;line&quot;: 24,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 8590551,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+      &quot;line&quot;: 25,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;foo&quot;,
+            &quot;Der Foo&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;Der Bar&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;baz&quot;,
+            &quot;Der Baz&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 644666,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 12233278,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Zeilen ergänzen</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 71013,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 96740,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;A&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+  &quot;line&quot;: 13,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 49812,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;B&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;A\&quot;:&quot;,
+  &quot;line&quot;: 17,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;foo&quot;,
+        &quot;Der Foo&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;Der Bar&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 832206,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;i18n/messages.csv&quot; in &quot;A&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td></tr><tr><td>foo</td><td>Der Foo</td></tr><tr><td>bar</td><td>Der Bar</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;B\&quot;:&quot;,
+  &quot;line&quot;: 21,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;baz&quot;,
+        &quot;Der Baz&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 373721,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Tabelle &quot;i18n/messages.csv&quot; in &quot;B&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td></tr><tr><td>baz</td><td>Der Baz</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+  &quot;line&quot;: 24,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 8590551,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;merge A B&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+  &quot;line&quot;: 25,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;foo&quot;,
+        &quot;Der Foo&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;Der Bar&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;baz&quot;,
+        &quot;Der Baz&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 644666,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich eine Tabelle &quot;i18n/messages.csv&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td></tr><tr><td>foo</td><td>Der Foo</td></tr><tr><td>bar</td><td>Der Bar</td></tr><tr><td>baz</td><td>Der Baz</td></tr></table></div></div></li></ul></div><div id="CSV-Dateien-überlagern;spalten-ergänzen" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Spalten ergänzen&quot;,
+  &quot;id&quot;: &quot;CSV-Dateien-überlagern;spalten-ergänzen&quot;,
+  &quot;line&quot;: 31,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 16189,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 69293,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 50975,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+      &quot;line&quot;: 13,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 43816,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;A\&quot;:&quot;,
+      &quot;line&quot;: 32,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;foo&quot;,
+            &quot;Der Foo&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;Der Bar&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 776768,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;B\&quot;:&quot;,
+      &quot;line&quot;: 36,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;en&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;The Bar&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 393251,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+      &quot;line&quot;: 39,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 5148841,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+      &quot;line&quot;: 40,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;,
+            &quot;en&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;foo&quot;,
+            &quot;Der Foo&quot;,
+            &quot;&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;Der Bar&quot;,
+            &quot;The Bar&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 402052,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 951758,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Spalten ergänzen</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 69293,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 50975,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;A&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+  &quot;line&quot;: 13,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 43816,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;B&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;A\&quot;:&quot;,
+  &quot;line&quot;: 32,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;foo&quot;,
+        &quot;Der Foo&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;Der Bar&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 776768,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;i18n/messages.csv&quot; in &quot;A&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td></tr><tr><td>foo</td><td>Der Foo</td></tr><tr><td>bar</td><td>Der Bar</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;B\&quot;:&quot;,
+  &quot;line&quot;: 36,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;en&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;The Bar&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 393251,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Tabelle &quot;i18n/messages.csv&quot; in &quot;B&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>en</td></tr><tr><td>bar</td><td>The Bar</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+  &quot;line&quot;: 39,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 5148841,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;merge A B&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+  &quot;line&quot;: 40,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;,
+        &quot;en&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;foo&quot;,
+        &quot;Der Foo&quot;,
+        &quot;&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;Der Bar&quot;,
+        &quot;The Bar&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 402052,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich eine Tabelle &quot;i18n/messages.csv&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td><td>en</td></tr><tr><td>foo</td><td>Der Foo</td><td></td></tr><tr><td>bar</td><td>Der Bar</td><td>The Bar</td></tr></table></div></div></li></ul></div><div id="CSV-Dateien-überlagern;einzelne-zellen-überschreiben" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Einzelne Zellen überschreiben&quot;,
+  &quot;id&quot;: &quot;CSV-Dateien-überlagern;einzelne-zellen-überschreiben&quot;,
+  &quot;line&quot;: 45,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 16817,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 55151,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 42582,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+      &quot;line&quot;: 13,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 38950,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;A\&quot;:&quot;,
+      &quot;line&quot;: 46,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;,
+            &quot;en&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;foo&quot;,
+            &quot;Der Foo&quot;,
+            &quot;The Foo&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;Der Bar&quot;,
+            &quot;The Bar&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 522450,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;B\&quot;:&quot;,
+      &quot;line&quot;: 50,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;en&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;The Beef&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 421938,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+      &quot;line&quot;: 53,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 5166962,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+      &quot;line&quot;: 54,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;,
+            &quot;en&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;foo&quot;,
+            &quot;Der Foo&quot;,
+            &quot;The Foo&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;bar&quot;,
+            &quot;Der Bar&quot;,
+            &quot;The Beef&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 423257,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 823710,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Einzelne Zellen überschreiben</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 55151,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 42582,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;A&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+  &quot;line&quot;: 13,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 38950,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;B&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;A\&quot;:&quot;,
+  &quot;line&quot;: 46,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;,
+        &quot;en&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;foo&quot;,
+        &quot;Der Foo&quot;,
+        &quot;The Foo&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;Der Bar&quot;,
+        &quot;The Bar&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 522450,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;i18n/messages.csv&quot; in &quot;A&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td><td>en</td></tr><tr><td>foo</td><td>Der Foo</td><td>The Foo</td></tr><tr><td>bar</td><td>Der Bar</td><td>The Bar</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot; in \&quot;B\&quot;:&quot;,
+  &quot;line&quot;: 50,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;en&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;The Beef&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 421938,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Tabelle &quot;i18n/messages.csv&quot; in &quot;B&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>en</td></tr><tr><td>bar</td><td>The Beef</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+  &quot;line&quot;: 53,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 5166962,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;merge A B&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+  &quot;line&quot;: 54,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;,
+        &quot;en&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;foo&quot;,
+        &quot;Der Foo&quot;,
+        &quot;The Foo&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;bar&quot;,
+        &quot;Der Bar&quot;,
+        &quot;The Beef&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 423257,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich eine Tabelle &quot;i18n/messages.csv&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td><td>en</td></tr><tr><td>foo</td><td>Der Foo</td><td>The Foo</td></tr><tr><td>bar</td><td>Der Bar</td><td>The Beef</td></tr></table></div></div></li></ul></div></div></div><div id="Arbeitsverzeichnisse-überlagern" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Arbeitsverzeichnisse überlagern</h2><div class="description"><p>Als Betreiber
+möchte ich den Inhalt mehrerer Abreitsverzeichnisse überlagern können
+so dass ich verschiedene Aspekte meiner Kartenanwendung getrennt versionieren kann.
+(bspw Client-Code von CSS files trennen o.ä.)</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 10,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="Arbeitsverzeichnisse-überlagern;verzeichnisse-rekursive-zusammenführen" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Verzeichnisse rekursive zusammenführen&quot;,
+  &quot;id&quot;: &quot;Arbeitsverzeichnisse-überlagern;verzeichnisse-rekursive-zusammenführen&quot;,
+  &quot;line&quot;: 15,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 10402,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 59135,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 45188,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+      &quot;line&quot;: 13,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 47062,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.txt\&quot; in \&quot;A\&quot;:&quot;,
+      &quot;line&quot;: 16,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Foo&quot;,
+        &quot;line&quot;: 17,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 345583,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;dir/bar/baz.txt\&quot; in \&quot;A\&quot;:&quot;,
+      &quot;line&quot;: 20,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Diese Datei wird überschrieben.&quot;,
+        &quot;line&quot;: 21,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 973806,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;dir/bar/baz.txt\&quot; in \&quot;B\&quot;:&quot;,
+      &quot;line&quot;: 24,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Baz&quot;,
+        &quot;line&quot;: 25,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 418525,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+      &quot;line&quot;: 28,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 6073188,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich in \&quot;dir/foo.txt\&quot;:&quot;,
+      &quot;line&quot;: 29,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Foo&quot;,
+        &quot;line&quot;: 30,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 261091,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;in \&quot;dir/bar/baz.txt\&quot;:&quot;,
+      &quot;line&quot;: 33,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Baz&quot;,
+        &quot;line&quot;: 34,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 145671,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1278739,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Verzeichnisse rekursive zusammenführen</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 59135,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 45188,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;A&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+  &quot;line&quot;: 13,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 47062,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;B&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.txt\&quot; in \&quot;A\&quot;:&quot;,
+  &quot;line&quot;: 16,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Foo&quot;,
+    &quot;line&quot;: 17,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 345583,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Datei &quot;dir/foo.txt&quot; in &quot;A&quot;:</span></div><div class="data"><div><pre class="doc-string">Foo</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;dir/bar/baz.txt\&quot; in \&quot;A\&quot;:&quot;,
+  &quot;line&quot;: 20,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Diese Datei wird überschrieben.&quot;,
+    &quot;line&quot;: 21,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 973806,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;dir/bar/baz.txt&quot; in &quot;A&quot;:</span></div><div class="data"><div><pre class="doc-string">Diese Datei wird überschrieben.</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;dir/bar/baz.txt\&quot; in \&quot;B\&quot;:&quot;,
+  &quot;line&quot;: 24,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Baz&quot;,
+    &quot;line&quot;: 25,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 418525,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;dir/bar/baz.txt&quot; in &quot;B&quot;:</span></div><div class="data"><div><pre class="doc-string">Baz</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+  &quot;line&quot;: 28,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 6073188,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;merge A B&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich in \&quot;dir/foo.txt\&quot;:&quot;,
+  &quot;line&quot;: 29,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Foo&quot;,
+    &quot;line&quot;: 30,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 261091,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich in &quot;dir/foo.txt&quot;:</span></div><div class="data"><div><pre class="doc-string">Foo</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;in \&quot;dir/bar/baz.txt\&quot;:&quot;,
+  &quot;line&quot;: 33,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Baz&quot;,
+    &quot;line&quot;: 34,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 145671,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">in &quot;dir/bar/baz.txt&quot;:</span></div><div class="data"><div><pre class="doc-string">Baz</pre></div></div></li></ul></div></div></div><div id="JSON-Dateien-überlagern" class="feature"><pre class="json-source"></pre><h2>Funktionalität: JSON-Dateien überlagern</h2><div class="description"><p>Als Betreiber
+möchte ich Konfigurationsdateien im JSON Format aus verschiedenen Konfigurationsverzeichnissen überlagern
+so dass ich bspw Default-Werte in einer Basiskonfiguration verwalten kann, aus der ich dann
+für konkrete Anwendungen nur einzelne Werte überschreibe.</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 10,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="JSON-Dateien-überlagern;objekte-rekursive-zusammenführen" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Objekte rekursive zusammenführen&quot;,
+  &quot;id&quot;: &quot;JSON-Dateien-überlagern;objekte-rekursive-zusammenführen&quot;,
+  &quot;line&quot;: 16,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 12200,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 62213,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 47425,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+      &quot;line&quot;: 13,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 43652,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;A\&quot;:&quot;,
+      &quot;line&quot;: 17,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;a\&quot;: 1,\n  \&quot;b\&quot;:{\n    \&quot;c\&quot;:true\n  },\n  \&quot;d\&quot;:2\n}&quot;,
+        &quot;line&quot;: 18,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 337719,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;B\&quot;:&quot;,
+      &quot;line&quot;: 27,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;a\&quot;:0,\n  \&quot;b\&quot;:{\n    \&quot;xx\&quot;:false\n  }\n}&quot;,
+        &quot;line&quot;: 28,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 197842,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+      &quot;line&quot;: 36,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 5799540,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;dir/foo.json\&quot;:&quot;,
+      &quot;line&quot;: 37,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;a\&quot;: 0,\n  \&quot;b\&quot;:{\n    \&quot;c\&quot;:true,\n    \&quot;xx\&quot;:false\n  },\n  \&quot;d\&quot;:2\n}&quot;,
+        &quot;line&quot;: 38,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 150749,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 689628,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Objekte rekursive zusammenführen</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 62213,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 47425,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;A&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+  &quot;line&quot;: 13,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 43652,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;B&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;A\&quot;:&quot;,
+  &quot;line&quot;: 17,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;a\&quot;: 1,\n  \&quot;b\&quot;:{\n    \&quot;c\&quot;:true\n  },\n  \&quot;d\&quot;:2\n}&quot;,
+    &quot;line&quot;: 18,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 337719,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Datei &quot;dir/foo.json&quot; in &quot;A&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;a&quot;: 1,
+  &quot;b&quot;:{
+    &quot;c&quot;:true
+  },
+  &quot;d&quot;:2
+}</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;B\&quot;:&quot;,
+  &quot;line&quot;: 27,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;a\&quot;:0,\n  \&quot;b\&quot;:{\n    \&quot;xx\&quot;:false\n  }\n}&quot;,
+    &quot;line&quot;: 28,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 197842,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;dir/foo.json&quot; in &quot;B&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;a&quot;:0,
+  &quot;b&quot;:{
+    &quot;xx&quot;:false
+  }
+}</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+  &quot;line&quot;: 36,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 5799540,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;merge A B&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;dir/foo.json\&quot;:&quot;,
+  &quot;line&quot;: 37,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;a\&quot;: 0,\n  \&quot;b\&quot;:{\n    \&quot;c\&quot;:true,\n    \&quot;xx\&quot;:false\n  },\n  \&quot;d\&quot;:2\n}&quot;,
+    &quot;line&quot;: 38,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 150749,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich folgende Daten in &quot;dir/foo.json&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;a&quot;: 0,
+  &quot;b&quot;:{
+    &quot;c&quot;:true,
+    &quot;xx&quot;:false
+  },
+  &quot;d&quot;:2
+}</pre></div></div></li></ul></div><div id="JSON-Dateien-überlagern;arrays-überschreiben" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Arrays überschreiben&quot;,
+  &quot;id&quot;: &quot;JSON-Dateien-überlagern;arrays-überschreiben&quot;,
+  &quot;line&quot;: 49,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 9270,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 47720,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 38143,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+      &quot;line&quot;: 13,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 35461,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;A\&quot;:&quot;,
+      &quot;line&quot;: 50,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;a\&quot;: [1,2,3]\n}&quot;,
+        &quot;line&quot;: 51,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 269770,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;B\&quot;:&quot;,
+      &quot;line&quot;: 56,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;a\&quot;:[0]\n}&quot;,
+        &quot;line&quot;: 57,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 161292,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+      &quot;line&quot;: 62,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 3986985,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;dir/foo.json\&quot;:&quot;,
+      &quot;line&quot;: 63,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;{\n  \&quot;a\&quot;:[0]\n}&quot;,
+        &quot;line&quot;: 64,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 133304,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 680755,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Arrays überschreiben</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 47720,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;A\&quot;&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 38143,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;A&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Konfigurationsverzeichnis \&quot;B\&quot;&quot;,
+  &quot;line&quot;: 13,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 35461,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">ein Konfigurationsverzeichnis &quot;B&quot;</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;A\&quot;:&quot;,
+  &quot;line&quot;: 50,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;a\&quot;: [1,2,3]\n}&quot;,
+    &quot;line&quot;: 51,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 269770,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Datei &quot;dir/foo.json&quot; in &quot;A&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;a&quot;: [1,2,3]
+}</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;dir/foo.json\&quot; in \&quot;B\&quot;:&quot;,
+  &quot;line&quot;: 56,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;a\&quot;:[0]\n}&quot;,
+    &quot;line&quot;: 57,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 161292,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;dir/foo.json&quot; in &quot;B&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;a&quot;:[0]
+}</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;merge A B\&quot; ausführe&quot;,
+  &quot;line&quot;: 62,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 3986985,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;merge A B&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich folgende Daten in \&quot;dir/foo.json\&quot;:&quot;,
+  &quot;line&quot;: 63,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;{\n  \&quot;a\&quot;:[0]\n}&quot;,
+    &quot;line&quot;: 64,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 133304,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich folgende Daten in &quot;dir/foo.json&quot;:</span></div><div class="data"><div><pre class="doc-string">{
+  &quot;a&quot;:[0]
+}</pre></div></div></li></ul></div></div></div><div id="Statische-Resourcen" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Statische Resourcen</h2><div class="description"><p>Als Betreiber möchte ich das der Inhalt des Verzeichniches &#39;static&#39; unverändert in das Ausgabeverzeichnis kopiert wird,
+damit ich z.B. statische Resourcen wie HTML-Dateien, Stylesheets und Bilder von den dynamisch generierten
+Resourcen trennen kann.</p>
+</div><div class="elements"><div id="Statische-Resourcen;statische-resourcen-kopieren" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Statische Resourcen kopieren&quot;,
+  &quot;id&quot;: &quot;Statische-Resourcen;statische-resourcen-kopieren&quot;,
+  &quot;line&quot;: 8,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 8547,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 9,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 44138,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;static/zeug/foo.txt\&quot;:&quot;,
+      &quot;line&quot;: 10,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Foo&quot;,
+        &quot;line&quot;: 11,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 322882,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;site/zeug/bar.txt\&quot;:&quot;,
+      &quot;line&quot;: 14,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Bar&quot;,
+        &quot;line&quot;: 15,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 239924,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 18,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 3388715,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich in \&quot;site/zeug/foo.txt\&quot;:&quot;,
+      &quot;line&quot;: 19,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Foo&quot;,
+        &quot;line&quot;: 20,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 130634,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;in \&quot;site/zeug/bar.txt\&quot;:&quot;,
+      &quot;line&quot;: 23,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;Bar&quot;,
+        &quot;line&quot;: 24,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 304900,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1972273,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Statische Resourcen kopieren</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 9,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 44138,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;static/zeug/foo.txt\&quot;:&quot;,
+  &quot;line&quot;: 10,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Foo&quot;,
+    &quot;line&quot;: 11,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 322882,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;static/zeug/foo.txt&quot;:</span></div><div class="data"><div><pre class="doc-string">Foo</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;site/zeug/bar.txt\&quot;:&quot;,
+  &quot;line&quot;: 14,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Bar&quot;,
+    &quot;line&quot;: 15,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 239924,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;site/zeug/bar.txt&quot;:</span></div><div class="data"><div><pre class="doc-string">Bar</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 18,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 3388715,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich in \&quot;site/zeug/foo.txt\&quot;:&quot;,
+  &quot;line&quot;: 19,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Foo&quot;,
+    &quot;line&quot;: 20,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 130634,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich in &quot;site/zeug/foo.txt&quot;:</span></div><div class="data"><div><pre class="doc-string">Foo</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;in \&quot;site/zeug/bar.txt\&quot;:&quot;,
+  &quot;line&quot;: 23,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;Bar&quot;,
+    &quot;line&quot;: 24,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 304900,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">in &quot;site/zeug/bar.txt&quot;:</span></div><div class="data"><div><pre class="doc-string">Bar</pre></div></div></li></ul></div></div></div><div id="Templates-per-Datenpunkt-rendern" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Templates per Datenpunkt rendern</h2><div class="description"><p>Als Betreiber
+möchte ich Templates zum Generieren von pro-Datenpunk-Artefakten verwenden
+um z.B. Institutionsdetailseiten erstelle zu können</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 9,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 10,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 10,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="Templates-per-Datenpunkt-rendern;jade-template" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;Jade-Template&quot;,
+  &quot;id&quot;: &quot;Templates-per-Datenpunkt-rendern;jade-template&quot;,
+  &quot;line&quot;: 16,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 11136,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 10,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 56119,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;id&quot;,
+            &quot;name&quot;,
+            &quot;plz&quot;,
+            &quot;einwohner&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;1&quot;,
+            &quot;Poppelsdorf&quot;,
+            &quot;53115&quot;,
+            &quot;6248&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;2&quot;,
+            &quot;Békásmegyer&quot;,
+            &quot;1039&quot;,
+            &quot;38169&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 572534,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;templates/detail.jade\&quot;:&quot;,
+      &quot;line&quot;: 17,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;---\nprefix: subdir/foo_\nsuffix: .html\n---\nh1= item.name\np Der Stadtteil #{item.plz} #{item.name} hat #{item.einwohner} Einwohner.&quot;,
+        &quot;line&quot;: 18,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 288724,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 26,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 36648867,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich in \&quot;site/subdir/foo_1.html\&quot;:&quot;,
+      &quot;line&quot;: 27,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;&lt;h1&gt;Poppelsdorf&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 53115 Poppelsdorf hat 6248 Einwohner.&lt;/p&gt;&quot;,
+        &quot;line&quot;: 28,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 150878,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;in \&quot;site/subdir/foo_2.html\&quot;:&quot;,
+      &quot;line&quot;: 32,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;&lt;h1&gt;Békásmegyer&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 1039 Békásmegyer hat 38169 Einwohner.&lt;/p&gt;&quot;,
+        &quot;line&quot;: 33,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 127238,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1938704,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: Jade-Template</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 10,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 56119,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;id&quot;,
+        &quot;name&quot;,
+        &quot;plz&quot;,
+        &quot;einwohner&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;1&quot;,
+        &quot;Poppelsdorf&quot;,
+        &quot;53115&quot;,
+        &quot;6248&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;2&quot;,
+        &quot;Békásmegyer&quot;,
+        &quot;1039&quot;,
+        &quot;38169&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 572534,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Tabelle &quot;data/index.csv&quot;:</span></div><div class="data"><div><table><tr><td>id</td><td>name</td><td>plz</td><td>einwohner</td></tr><tr><td>1</td><td>Poppelsdorf</td><td>53115</td><td>6248</td></tr><tr><td>2</td><td>Békásmegyer</td><td>1039</td><td>38169</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;templates/detail.jade\&quot;:&quot;,
+  &quot;line&quot;: 17,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;---\nprefix: subdir/foo_\nsuffix: .html\n---\nh1= item.name\np Der Stadtteil #{item.plz} #{item.name} hat #{item.einwohner} Einwohner.&quot;,
+    &quot;line&quot;: 18,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 288724,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Datei &quot;templates/detail.jade&quot;:</span></div><div class="data"><div><pre class="doc-string">---
+prefix: subdir/foo_
+suffix: .html
+---
+h1= item.name
+p Der Stadtteil #{item.plz} #{item.name} hat #{item.einwohner} Einwohner.</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 26,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 36648867,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich in \&quot;site/subdir/foo_1.html\&quot;:&quot;,
+  &quot;line&quot;: 27,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;&lt;h1&gt;Poppelsdorf&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 53115 Poppelsdorf hat 6248 Einwohner.&lt;/p&gt;&quot;,
+    &quot;line&quot;: 28,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 150878,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich in &quot;site/subdir/foo_1.html&quot;:</span></div><div class="data"><div><pre class="doc-string">&lt;h1&gt;Poppelsdorf&lt;/h1&gt;
+&lt;p&gt;Der Stadtteil 53115 Poppelsdorf hat 6248 Einwohner.&lt;/p&gt;</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;in \&quot;site/subdir/foo_2.html\&quot;:&quot;,
+  &quot;line&quot;: 32,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;&lt;h1&gt;Békásmegyer&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 1039 Békásmegyer hat 38169 Einwohner.&lt;/p&gt;&quot;,
+    &quot;line&quot;: 33,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 127238,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">in &quot;site/subdir/foo_2.html&quot;:</span></div><div class="data"><div><pre class="doc-string">&lt;h1&gt;Békásmegyer&lt;/h1&gt;
+&lt;p&gt;Der Stadtteil 1039 Békásmegyer hat 38169 Einwohner.&lt;/p&gt;</pre></div></div></li></ul></div><div id="Templates-per-Datenpunkt-rendern;eco-template" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;ECO-Template&quot;,
+  &quot;id&quot;: &quot;Templates-per-Datenpunkt-rendern;eco-template&quot;,
+  &quot;line&quot;: 38,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 32875,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 10,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 156337,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+      &quot;line&quot;: 11,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;id&quot;,
+            &quot;name&quot;,
+            &quot;plz&quot;,
+            &quot;einwohner&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;1&quot;,
+            &quot;Poppelsdorf&quot;,
+            &quot;53115&quot;,
+            &quot;6248&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;2&quot;,
+            &quot;Békásmegyer&quot;,
+            &quot;1039&quot;,
+            &quot;38169&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1823507,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;templates/detail.eco\&quot;:&quot;,
+      &quot;line&quot;: 39,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;---\nprefix: subdir/foo_\nsuffix: .html\n---\n&lt;h1&gt;&lt;%= @item.name %&gt;&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil &lt;%= @item.plz %&gt; &lt;%= @item.name %&gt; hat &lt;%= @item.einwohner %&gt; Einwohner.&lt;/p&gt;&quot;,
+        &quot;line&quot;: 40,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 573126,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 48,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 21867374,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich in \&quot;site/subdir/foo_1.html\&quot;:&quot;,
+      &quot;line&quot;: 49,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;&lt;h1&gt;Poppelsdorf&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 53115 Poppelsdorf hat 6248 Einwohner.&lt;/p&gt;&quot;,
+        &quot;line&quot;: 50,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 378197,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;in \&quot;site/subdir/foo_2.html\&quot;:&quot;,
+      &quot;line&quot;: 54,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;&lt;h1&gt;Békásmegyer&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 1039 Békásmegyer hat 38169 Einwohner.&lt;/p&gt;&quot;,
+        &quot;line&quot;: 55,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 122620,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 1019921,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: ECO-Template</h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 10,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 156337,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;data/index.csv\&quot;:&quot;,
+  &quot;line&quot;: 11,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;id&quot;,
+        &quot;name&quot;,
+        &quot;plz&quot;,
+        &quot;einwohner&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;1&quot;,
+        &quot;Poppelsdorf&quot;,
+        &quot;53115&quot;,
+        &quot;6248&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;2&quot;,
+        &quot;Békásmegyer&quot;,
+        &quot;1039&quot;,
+        &quot;38169&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 1823507,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Tabelle &quot;data/index.csv&quot;:</span></div><div class="data"><div><table><tr><td>id</td><td>name</td><td>plz</td><td>einwohner</td></tr><tr><td>1</td><td>Poppelsdorf</td><td>53115</td><td>6248</td></tr><tr><td>2</td><td>Békásmegyer</td><td>1039</td><td>38169</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;templates/detail.eco\&quot;:&quot;,
+  &quot;line&quot;: 39,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;---\nprefix: subdir/foo_\nsuffix: .html\n---\n&lt;h1&gt;&lt;%= @item.name %&gt;&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil &lt;%= @item.plz %&gt; &lt;%= @item.name %&gt; hat &lt;%= @item.einwohner %&gt; Einwohner.&lt;/p&gt;&quot;,
+    &quot;line&quot;: 40,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 573126,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Datei &quot;templates/detail.eco&quot;:</span></div><div class="data"><div><pre class="doc-string">---
+prefix: subdir/foo_
+suffix: .html
+---
+&lt;h1&gt;&lt;%= @item.name %&gt;&lt;/h1&gt;
+&lt;p&gt;Der Stadtteil &lt;%= @item.plz %&gt; &lt;%= @item.name %&gt; hat &lt;%= @item.einwohner %&gt; Einwohner.&lt;/p&gt;</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 48,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 21867374,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich in \&quot;site/subdir/foo_1.html\&quot;:&quot;,
+  &quot;line&quot;: 49,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;&lt;h1&gt;Poppelsdorf&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 53115 Poppelsdorf hat 6248 Einwohner.&lt;/p&gt;&quot;,
+    &quot;line&quot;: 50,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 378197,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich in &quot;site/subdir/foo_1.html&quot;:</span></div><div class="data"><div><pre class="doc-string">&lt;h1&gt;Poppelsdorf&lt;/h1&gt;
+&lt;p&gt;Der Stadtteil 53115 Poppelsdorf hat 6248 Einwohner.&lt;/p&gt;</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;in \&quot;site/subdir/foo_2.html\&quot;:&quot;,
+  &quot;line&quot;: 54,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;&lt;h1&gt;Békásmegyer&lt;/h1&gt;\n&lt;p&gt;Der Stadtteil 1039 Békásmegyer hat 38169 Einwohner.&lt;/p&gt;&quot;,
+    &quot;line&quot;: 55,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 122620,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">in &quot;site/subdir/foo_2.html&quot;:</span></div><div class="data"><div><pre class="doc-string">&lt;h1&gt;Békásmegyer&lt;/h1&gt;
+&lt;p&gt;Der Stadtteil 1039 Békásmegyer hat 38169 Einwohner.&lt;/p&gt;</pre></div></div></li></ul></div></div></div><div id="Internationalisierung" class="feature"><pre class="json-source"></pre><h2>Funktionalität: Internationalisierung</h2><div class="description"><p>Als Betreiber
+möchte ich Textfragmente in Übersetzungstabellen auslagern
+um einerseits (jetzt wichtig) den Wortlaut einzelner Nachrichten schnell anpassen zu können,
+und andererseits (zukünftiges Feature) mehrsprachige Webseiten erstellen 
+zu können.</p>
+</div><div class="elements"><div class="background"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;keyword&quot;: &quot;Background&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;background&quot;,
+  &quot;line&quot;: 11,
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;
+    }
+  ]
+}</pre><h3>Background: </h3><div class="description"></div><ul class="steps"><li class="step unknown"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li></ul></div><div id="Internationalisierung;" class="scenario"><pre class="json-source">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;id&quot;: &quot;Internationalisierung;&quot;,
+  &quot;line&quot;: 14,
+  &quot;keyword&quot;: &quot;Scenario&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;type&quot;: &quot;scenario&quot;,
+  &quot;steps&quot;: [
+    {
+      &quot;keyword&quot;: &quot;Before &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 9274,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+      &quot;line&quot;: 12,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 47164,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+      &quot;line&quot;: 15,
+      &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+      &quot;rows&quot;: [
+        {
+          &quot;cells&quot;: [
+            &quot;code&quot;,
+            &quot;de&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;menu.info&quot;,
+            &quot;Informationen zur Karte&quot;
+          ]
+        },
+        {
+          &quot;cells&quot;: [
+            &quot;menu.filter&quot;,
+            &quot;Darstellungsfilter&quot;
+          ]
+        }
+      ],
+      &quot;result&quot;: {
+        &quot;duration&quot;: 576500,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;eine Datei \&quot;templates/index.html.jade\&quot;:&quot;,
+      &quot;line&quot;: 19,
+      &quot;keyword&quot;: &quot;Und &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;ul\n  li= tr('menu.info')\n  li= tr('menu.filter')&quot;,
+        &quot;line&quot;: 20,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 305337,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+      &quot;line&quot;: 25,
+      &quot;keyword&quot;: &quot;Wenn &quot;,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 7578246,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;name&quot;: &quot;erwarte ich in \&quot;site/index.html\&quot;:&quot;,
+      &quot;line&quot;: 26,
+      &quot;keyword&quot;: &quot;Dann &quot;,
+      &quot;doc_string&quot;: {
+        &quot;value&quot;: &quot;&lt;ul&gt;\n  &lt;li&gt;Informationen zur Karte&lt;/li&gt;\n  &lt;li&gt;Darstellungsfilter&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+        &quot;line&quot;: 27,
+        &quot;content_type&quot;: &quot;&quot;
+      },
+      &quot;result&quot;: {
+        &quot;duration&quot;: 192418,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    },
+    {
+      &quot;keyword&quot;: &quot;After &quot;,
+      &quot;hidden&quot;: true,
+      &quot;result&quot;: {
+        &quot;duration&quot;: 699353,
+        &quot;status&quot;: &quot;passed&quot;
+      },
+      &quot;match&quot;: {}
+    }
+  ]
+}</pre><h3>Scenario: </h3><div class="description"></div><ul class="steps"><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ein Arbeitsverzeichnis&quot;,
+  &quot;line&quot;: 12,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 47164,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">ein Arbeitsverzeichnis</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Tabelle \&quot;i18n/messages.csv\&quot;:&quot;,
+  &quot;line&quot;: 15,
+  &quot;keyword&quot;: &quot;Gegeben sei &quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;cells&quot;: [
+        &quot;code&quot;,
+        &quot;de&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;menu.info&quot;,
+        &quot;Informationen zur Karte&quot;
+      ]
+    },
+    {
+      &quot;cells&quot;: [
+        &quot;menu.filter&quot;,
+        &quot;Darstellungsfilter&quot;
+      ]
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;duration&quot;: 576500,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Gegeben sei </span><span class="text">eine Tabelle &quot;i18n/messages.csv&quot;:</span></div><div class="data"><div><table><tr><td>code</td><td>de</td></tr><tr><td>menu.info</td><td>Informationen zur Karte</td></tr><tr><td>menu.filter</td><td>Darstellungsfilter</td></tr></table></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;eine Datei \&quot;templates/index.html.jade\&quot;:&quot;,
+  &quot;line&quot;: 19,
+  &quot;keyword&quot;: &quot;Und &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;ul\n  li= tr('menu.info')\n  li= tr('menu.filter')&quot;,
+    &quot;line&quot;: 20,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 305337,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Und </span><span class="text">eine Datei &quot;templates/index.html.jade&quot;:</span></div><div class="data"><div><pre class="doc-string">ul
+  li= tr('menu.info')
+  li= tr('menu.filter')</pre></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;ich den Generator mit dem Befehl \&quot;build\&quot; ausführe&quot;,
+  &quot;line&quot;: 25,
+  &quot;keyword&quot;: &quot;Wenn &quot;,
+  &quot;result&quot;: {
+    &quot;duration&quot;: 7578246,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Wenn </span><span class="text">ich den Generator mit dem Befehl &quot;build&quot; ausführe</span></div><div class="data"><div></div></div></li><li class="step passed"><pre class="json-source">{
+  &quot;name&quot;: &quot;erwarte ich in \&quot;site/index.html\&quot;:&quot;,
+  &quot;line&quot;: 26,
+  &quot;keyword&quot;: &quot;Dann &quot;,
+  &quot;doc_string&quot;: {
+    &quot;value&quot;: &quot;&lt;ul&gt;\n  &lt;li&gt;Informationen zur Karte&lt;/li&gt;\n  &lt;li&gt;Darstellungsfilter&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+    &quot;line&quot;: 27,
+    &quot;content_type&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;duration&quot;: 192418,
+    &quot;status&quot;: &quot;passed&quot;
+  },
+  &quot;match&quot;: {}
+}</pre><div class="text"><span class="keyword">Dann </span><span class="text">erwarte ich in &quot;site/index.html&quot;:</span></div><div class="data"><div><pre class="doc-string">&lt;ul&gt;
+  &lt;li&gt;Informationen zur Karte&lt;/li&gt;
+  &lt;li&gt;Darstellungsfilter&lt;/li&gt;
+&lt;/ul&gt;</pre></div></div></li></ul></div></div></div>

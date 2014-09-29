@@ -1,0 +1,76 @@
+div.feature{
+  margin: 50px;
+  width: 800px;
+  border-bottom:medium solid white;
+  padding: 10px;
+}
+body{
+  background:black;
+  color:white;
+}
+
+div.scenario, div.background{
+  margin-top: 10px;
+  margin-left: 10px;
+  background:#262626;
+  color:white;
+  padding: 5px;
+}
+pre.json-source{
+  display:none;
+}
+
+span.keyword{
+  font-weight:bold
+}
+
+li.step.passed{
+  border-left:thick solid green;
+  padding-left:15px;
+}
+li.step.skipped{
+  border-left:thick solid grey;
+  color: grey;
+  padding-left:15px;
+}
+li.step.pending{
+  border-left:thick solid yellow;
+  padding-left:15px;
+}
+li.step.undefined{
+  border-left:thick solid yellow;
+  padding-left:15px;
+}
+li.step.failed{
+  border-left:thick solid red;
+  padding-left:15px;
+}
+
+li.step div.text{
+}
+li.step div.data{
+  margin: 5px 15px 10px 15px;
+}
+li.step div.data pre.doc-string{
+  background-color: black;
+  color:white;
+  border:thin solid #DCDAD5;
+  padding: 0px 15px;
+}
+
+li.step div.data table{  
+  border-collapse: collapse;
+  background-color: black;
+}
+li.step div.data table td{  
+  border:thin solid grey;
+  padding: 2px 15px;
+}
+
+
+li.step > div.text span {
+}
+
+ul.steps{
+  list-style-type: none;
+}

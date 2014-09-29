@@ -1,0 +1,32 @@
+{
+  "name": "cuke2html",
+  "version": "0.1.0",
+  "description": "render cucumber json output to readable html",
+  "main": "render-report.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "cuke2html": "bin/cuke2html.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ldegen/cuke2html.git"
+  },
+  "keywords": [
+    "cucumber",
+    "testing",
+    "reporting"
+  ],
+  "author": "Lukas Degener <l.degener@tarent.de>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ldegen/cuke2html/issues"
+  },
+  "homepage": "https://github.com/ldegen/cuke2html",
+  "dependencies": {
+    "jade": "^1.7.0",
+    "marked": "^0.3.2",
+    "optimist": "^0.6.1"
+  }
+}
