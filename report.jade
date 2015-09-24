@@ -12,15 +12,16 @@ mixin background(s)
     ul.steps
       each step in s.steps
         +step(step)
-          
+
 mixin scenario(s)
   div.scenario(id=s.id)
     pre.json-source=JSON.stringify(s,null,"  ")
     h3 #{s.keyword}: #{s.name}
     div.description!=  markdown(s.description)
-    ul.steps
-      each step in s.steps.filter(function(s){return ['Before ','After '].indexOf(s.keyword) == -1;})
-        +step(step)
+    if s.steps
+      ul.steps
+        each step in s.steps
+          +step(step)
 
 mixin table(rows)
   table
@@ -42,6 +43,11 @@ mixin step(s)
         if s.rows
           +table(s.rows)
 
+mixin unknown(element)
+  p.unknown keine ahnung, was ich mit '#{element.type}' machen soll.
+  pre.json-source= JSON.stringify(element,null,"  ")
+
+
 mixin element(element)
   case element.type
     when "scenario"
@@ -49,17 +55,17 @@ mixin element(element)
     when "background"
       +background(element)
     default
-      p keine ahnung
-
+      +unknown(element)
 
 mixin feature(feature)
   div.feature(id=feature.id)
-    pre.json-source=JSON.stringify(element,null,"  ")
+    pre.json-source=JSON.stringify(feature,null,"  ")
     h2 #{feature.keyword}: #{feature.name}
     div.description!=  markdown(feature.description)
     div.elements
-      each element in feature.elements
-        +element(element)
+      if feature.elements
+        each element in feature.elements
+          +element(element)
 
 each feature in features
   +feature(feature)
