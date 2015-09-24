@@ -1,6 +1,6 @@
 {
   "name": "cuke2html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "render cucumber json output to readable html",
   "main": "render-report.js",
   "scripts": {
